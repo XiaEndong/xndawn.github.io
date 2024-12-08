@@ -9,9 +9,9 @@ import { notes } from './notes'
 export default defineThemeConfig({
 
   logo: 'https://theme-plume.vuejs.press/plume.png',
-  // your git repo url
-//   docsRepo: '',
-//   docsDir: 'docs',
+  // // your git repo url
+  // docsRepo: 'https://github.com/xndawn/xndawn.github.io.git',
+  // docsDir: 'docs',
 
 
   appearance: true,
