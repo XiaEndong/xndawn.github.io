@@ -31,7 +31,7 @@ export default defineThemeConfig({
     { icon: 'github', link: 'https://github.com/xndawn' },
     { icon: "bilibili", link: 'https://space.bilibili.com/1767653524?spm_id_from=333.1007.0.0' },
     {icon: "qq",link:'https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d752790033'},
-    {icon:"twitter",link:'https://x.com/Chocolat_cos0'},
+    {icon:"twitter",link:'https://x.com/elonmusk'},
   ],
 
 })
