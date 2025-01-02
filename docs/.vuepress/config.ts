@@ -71,16 +71,17 @@ export default defineUserConfig({
        * 评论 comments
        * @see https://theme-plume.vuejs.press/guide/features/comments/
        */
-      // comment: {
-      //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
+      comment: {
+        provider: 'Waline', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+        serverURL: 'https://discuss.ndon.top',
+        comment: true,
+        repo: '',
+        repoId: '',
+        categoryId: '',
+        mapping: 'pathname',
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      },
     },
   }),
 })
