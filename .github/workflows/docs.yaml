@@ -16,10 +16,10 @@ jobs:
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
-      - name: Configure NPM Registry
-        run: |
-          npm config set registry https://registry.npmmirror.com/
-          npm config set @pnpm:registry https://registry.npmmirror.com/
+#      - name: Configure NPM Registry
+#        run: |
+#          npm config set registry https://registry.npmmirror.com/
+#          npm config set @pnpm:registry https://registry.npmmirror.com/
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
