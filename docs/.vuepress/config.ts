@@ -51,16 +51,7 @@ export default defineUserConfig({
     /* 页内信息 */
     // editLink: true,
     lastUpdated: false,
-    contributors: {
-      mode: 'block',
-      info: [
-        {
-          username: 'Xia Endong', // github username
-          name: 'Xia Endong',
-          // alias: ['peng_zhan_bo'], // 别名，本地 git 配置中的用户名
-        }
-      ]
-    },
+    // contributors: true,
     // changelog: false,
 
     /**
