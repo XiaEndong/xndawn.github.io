@@ -11,8 +11,8 @@
  */
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enNavbar, zhNavbar } from './navbar'
-import { enNotes, zhNotes } from './notes'
+import navbar from './navbar'
+import notes from './notes'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -27,7 +27,7 @@ export default defineThemeConfig({
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: 'https://github.com/xndawn' },
+    { icon: 'github', link: 'https://github.com/XiaEndong' },
     { icon: "bilibili", link: 'https://space.bilibili.com/1767653524?spm_id_from=333.1007.0.0' },
     {icon: "qq",link:'https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d752790033'},
     {icon:"twitter",link:'https://x.com/elonmusk'},
@@ -70,8 +70,8 @@ export default defineThemeConfig({
         organization: '浙江师范大学',
       },
 
-      navbar: zhNavbar,
-      notes: zhNotes,
+      navbar,
+      notes,
 
       /**
        * 公告板
@@ -84,32 +84,6 @@ export default defineThemeConfig({
        //   content: '',
        // },
     },
-    '/en/': {
-      /**
-       * @see https://theme-plume.vuejs.press/config/basic/#profile
-       */
-      profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'Xia Endong',
-        description: 'my blog',
-        // circle: true,
-        // location: '',
-        // organization: '',
-      },
 
-      navbar: enNavbar,
-      notes: enNotes,
-
-      /**
-       * 公告板
-       * @see https://theme-plume.vuejs.press/guide/features/bulletin/
-       */
-       // bulletin: {
-       //   layout: 'top-right',
-       //   contentType: 'markdown',
-       //   title: '',
-       //   content: '',
-       // },
-    },
   },
 })

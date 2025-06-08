@@ -12,6 +12,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import notes from './notes/index'
 
 export default defineUserConfig({
   base: '/',
@@ -22,11 +23,11 @@ export default defineUserConfig({
       lang: 'zh-CN',
       description: 'my blog',
     },
-    '/en/': {
-      title: 'Xia Endong',
-      lang: 'en-US',
-      description: 'my blog',
-    },
+    // '/en/': {
+    //   title: 'Xia Endong',
+    //   lang: 'en-US',
+    //   description: 'my blog',
+    // },
   },
 
   head: [
@@ -38,6 +39,7 @@ export default defineUserConfig({
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
+    notes,
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     // hostname: 'https://your_site_url',
 
@@ -48,7 +50,7 @@ export default defineUserConfig({
 
     /* 页内信息 */
     // editLink: true,
-    // lastUpdated: true,
+    lastUpdated: false,
     // contributors: true,
     // changelog: false,
 
@@ -68,6 +70,8 @@ export default defineUserConfig({
 
     /* 博客文章页面链接前缀 */
     article: '/article/',
+
+
 
     /**
      * 编译缓存，加快编译速度
@@ -170,13 +174,15 @@ export default defineUserConfig({
       provider: 'Waline', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
       serverURL: 'https://discuss.ndon.top',
       comment: true,
-      repo: '',
-      repoId: '',
-      categoryId: '',
-      mapping: 'pathname',
-      reactionsEnabled: true,
-      inputPosition: 'top',
+      // repo: 'https://github.com/XiaEndong/blog_discuss',
+      // repoId: '',
+      // categoryId: '',
+      // mapping: 'pathname',
+      // reactionsEnabled: true,
+      // inputPosition: 'top',
     },
+
+
 
     /**
      * 资源链接替换
